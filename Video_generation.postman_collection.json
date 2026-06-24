@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "f5485b3f-8f19-43c1-bde4-f9874c8f3eb3",
+    "name": "Video_generation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40839010"
+  },
+  "item": [
+    {
+      "name": "https://6pxbrxcl2yadizn7pdelvy6dcy0bwmtg.lambda-url.us-east-1.on.aws/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "logo",
+              "type": "file",
+              "uuid": "9bb27495-6cb6-486b-a63a-ff9b43c56cb9",
+              "src": "/C:/Users/SwatiSubhashree Das/Downloads/logo.png"
+            },
+            {
+              "key": "prompt",
+              "value": "\"A grand cinematic celebration unfolds across sweeping landscapes. Golden confetti rains down from above in slow motion, catching the light like falling stars. A champagne bottle pops in extreme close-up, bubbles rising in ultra-slow motion against a black background. Cut to a packed boardroom erupting in applause, suits and smiles, handshakes and high-fives. A pen signs the final page of a thick contract, close-up on the signature. The company logo gleams on a glass tower at golden hour. Fireworks burst over a city skyline at night, reflected in a river below. A team raises a trophy together on a rooftop, silhouetted against a blazing sunset. Cinematic 4K, epic orchestral energy, lens flares, dynamic camera movements.\"",
+              "type": "text",
+              "uuid": "b4147331-066f-4ce4-aa3f-c3ca4ee633f2"
+            },
+            {
+              "key": "overlay_text",
+              "value": "\"₹25 Cr Deal Closed!\\nWell done, Arjun\"",
+              "type": "text",
+              "uuid": "8298f3bc-3e57-4db3-a657-49cdb42eb0c6"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://6pxbrxcl2yadizn7pdelvy6dcy0bwmtg.lambda-url.us-east-1.on.aws/",
+          "protocol": "https",
+          "host": [
+            "6pxbrxcl2yadizn7pdelvy6dcy0bwmtg",
+            "lambda-url",
+            "us-east-1",
+            "on",
+            "aws"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://6pxbrxcl2yadizn7pdelvy6dcy0bwmtg.lambda-url.us-east-1.on.aws/",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://6pxbrxcl2yadizn7pdelvy6dcy0bwmtg.lambda-url.us-east-1.on.aws/?job_id=27227072-445e-4c53-9412-0ab5c9df3845",
+          "protocol": "https",
+          "host": [
+            "6pxbrxcl2yadizn7pdelvy6dcy0bwmtg",
+            "lambda-url",
+            "us-east-1",
+            "on",
+            "aws"
+          ],
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "job_id",
+              "value": "27227072-445e-4c53-9412-0ab5c9df3845"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

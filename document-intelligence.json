@@ -1,0 +1,152 @@
+{
+  "info": {
+    "_postman_id": "1b669078-795c-4648-aa47-703cb70700d2",
+    "name": "autonomous_loan_underwriting_agent_demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34717252"
+  },
+  "item": [
+    {
+      "name": "autonomous_loan_underwriting_agent",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "wp2R149Ufe3Orv5htWHyI1JsEs7IQkg51esXGgo5",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "Dwanka Nath Yadav",
+              "type": "text",
+              "uuid": "b38df7f0-294c-41ec-bda0-2749975db2a0"
+            },
+            {
+              "key": "email",
+              "value": "dwankanath@example.com",
+              "type": "text",
+              "uuid": "84235cda-8da4-4e19-b7f9-1fa2e5f9893c"
+            },
+            {
+              "key": "phone",
+              "value": "+91-9876543210",
+              "type": "text",
+              "uuid": "aa2ce88b-2593-47f7-8d4c-ac2ab0788012"
+            },
+            {
+              "key": "dob",
+              "value": "1977-03-17",
+              "type": "text",
+              "uuid": "b1c2872b-b619-4a66-ac67-9846e0aa5a79"
+            },
+            {
+              "key": "employment_status",
+              "value": "FULL_TIME_EMPLOYED",
+              "type": "text",
+              "uuid": "2271534b-c298-413b-ae75-0fda6dbaad09"
+            },
+            {
+              "key": "address",
+              "value": "Sarai Gambhirdas urf Blbipur, Post-Katraull, Phulpur, Prayagraj, Uttar Pradesh, 212402",
+              "type": "text",
+              "uuid": "12f2e441-2ebb-424d-8b86-5b08106120bb"
+            },
+            {
+              "key": "monthly_income",
+              "value": "65740",
+              "type": "text",
+              "uuid": "58fe73b6-1696-4c82-b980-9f4b54be3288"
+            },
+            {
+              "key": "loan_amount",
+              "value": "23000",
+              "type": "text",
+              "uuid": "af9f9982-86ec-4067-8c1a-c6e481381831"
+            },
+            {
+              "key": "purpose",
+              "value": "Personal",
+              "type": "text",
+              "uuid": "b8c142a2-8d83-42f1-aad0-b87564bdf057"
+            },
+            {
+              "key": "id_doc",
+              "type": "file",
+              "uuid": "77505b56-16e9-473b-aa17-8ad9ffa10855",
+              "src": "/C:/Users/AdrijaDasGupta/OneDrive - Rapyder Cloud Solutions Pvt Ltd/project/autonomous_underwritting/Aadhar_address (1).pdf"
+            },
+            {
+              "key": "bank_statement",
+              "type": "file",
+              "uuid": "cb8d50ca-cd18-41f0-947d-9f10fcde7da4",
+              "src": "/C:/Users/AdrijaDasGupta/Downloads/BANK STATEMENT2.pdf"
+            },
+            {
+              "key": "salary_slip",
+              "type": "file",
+              "uuid": "b903dcac-7808-4cdd-8711-ec35a3642251",
+              "src": "/C:/Users/AdrijaDasGupta/Downloads/SALARY SLIP2.pdf"
+            },
+            {
+              "key": "selfie",
+              "type": "file",
+              "uuid": "2030c7b5-74c5-4195-8f91-372c306a8a70",
+              "src": "/C:/Users/AdrijaDasGupta/OneDrive - Rapyder Cloud Solutions Pvt Ltd/project/autonomous_underwritting/Dwanka_selfie.jpg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://duzekll8n1.execute-api.us-east-1.amazonaws.com/dev/applications",
+          "protocol": "https",
+          "host": [
+            "duzekll8n1",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "dev",
+            "applications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_result",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "wp2R149Ufe3Orv5htWHyI1JsEs7IQkg51esXGgo5",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://duzekll8n1.execute-api.us-east-1.amazonaws.com/dev/applications/APP-9D2D8F69",
+          "protocol": "https",
+          "host": [
+            "duzekll8n1",
+            "execute-api",
+            "us-east-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "dev",
+            "applications",
+            "APP-9D2D8F69"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
