@@ -15,13 +15,13 @@ const NAV = [
   { to: "/knowledge", label: "Knowledge Hub", icon: BookOpenCheck },
 
   { to: "/priority", label: "Smart Prioritisation", icon: ListChecks, group: "Intelligence" },
-  { to: "/inbox", label: "Email Intelligence", icon: Mail, live: true },
-  { to: "/meetings", label: "Meetings Intelligence", icon: Video, live: true },
+  { to: "/inbox", label: "Email Intelligence", icon: Mail },
+  { to: "/meetings", label: "Meetings Intelligence", icon: Video },
   { to: "/proactive", label: "Proactive Intelligence", icon: Sparkles },
   { to: "/avatar", label: "Employee.AI Avatar", icon: BotMessageSquare },
   { to: "/autonomous", label: "Autonomous Actions", icon: Cog },
   { to: "/voice", label: "Voice Intelligence", icon: Mic },
-  { to: "/documents", label: "Document Intelligence", icon: FileText, live: true },
+  { to: "/documents", label: "Document Intelligence", icon: FileText },
   { to: "/workflows", label: "Workflow Orchestrator", icon: Workflow },
   { to: "/analytics", label: "Predictive Analytics", icon: LineChart },
 
@@ -30,7 +30,7 @@ const NAV = [
   { to: "/security", label: "Security Intelligence", icon: Lock },
 
   { to: "/gamification", label: "Gamification", icon: Trophy, group: "People" },
-  { to: "/celebration", label: "Celebration Engine", icon: PartyPopper, live: true },
+  { to: "/celebration", label: "Celebration Engine", icon: PartyPopper },
   { to: "/learning", label: "Learning & Development", icon: GraduationCap },
   { to: "/travel", label: "Travel & Expense", icon: Plane },
 
@@ -101,12 +101,7 @@ export default function Sidebar() {
                 >
                   <Icon size={15} strokeWidth={1.5} />
                   <span className="flex-1">{item.label}</span>
-                  {item.live && (
-                    <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-emerald-900/20 text-emerald-400 text-[9px] font-semibold uppercase tracking-wide">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      Live
-                    </span>
-                  )}
+
                   {item.isNew && (
                     <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-violet-900/20 text-violet-400 text-[9px] font-semibold uppercase tracking-wide">
                       <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
