@@ -4,7 +4,7 @@ import {
   LayoutGrid, Mail, Sparkles, BotMessageSquare, ListChecks, Trophy,
   PartyPopper, Cog, Plane, UserSquare2, ShieldCheck, GraduationCap,
   Mic, FileText, Workflow, LineChart, Lock, BookOpenCheck, Settings as SettingsIcon, Wand2,
-  Video, LogOut,
+  Video, LogOut, Phone, MailCheck, FileCheck, ClipboardCheck,
 } from "lucide-react";
 import { openAdvisor } from "./Advisor";
 import { useAuth } from "../context/AuthContext";
@@ -33,6 +33,11 @@ const NAV = [
   { to: "/celebration", label: "Celebration Engine", icon: PartyPopper, live: true },
   { to: "/learning", label: "Learning & Development", icon: GraduationCap },
   { to: "/travel", label: "Travel & Expense", icon: Plane },
+
+  { to: "/welcome-call", label: "Welcome Call Agent", icon: Phone, group: "Insurance AI", isNew: true },
+  { to: "/email-automation", label: "Email Automation", icon: MailCheck, isNew: true },
+  { to: "/auto-underwriting", label: "Auto Underwriting", icon: FileCheck, isNew: true },
+  { to: "/micro-claims", label: "Micro Claims", icon: ClipboardCheck, isNew: true },
 
   { to: "/settings", label: "Settings", icon: SettingsIcon, group: "System" },
 ];
@@ -100,6 +105,12 @@ export default function Sidebar() {
                     <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-emerald-900/20 text-emerald-400 text-[9px] font-semibold uppercase tracking-wide">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                       Live
+                    </span>
+                  )}
+                  {item.isNew && (
+                    <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-violet-900/20 text-violet-400 text-[9px] font-semibold uppercase tracking-wide">
+                      <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
+                      New
                     </span>
                   )}
                 </NavLink>
