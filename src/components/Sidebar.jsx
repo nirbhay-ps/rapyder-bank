@@ -36,7 +36,7 @@ const NAV = [
 
   { to: "/welcome-call", label: "Welcome Call Agent", icon: Phone, group: "Insurance AI", isNew: true },
   { to: "/email-automation", label: "Email Automation", icon: MailCheck, isNew: true },
-  { to: "/auto-underwriting", label: "Auto Underwriting", icon: FileCheck, isNew: true },
+  // { to: "/auto-underwriting", label: "Auto Underwriting", icon: FileCheck, isNew: true },
   { to: "/micro-claims", label: "Micro Claims", icon: ClipboardCheck, isNew: true },
 
   { to: "/settings", label: "Settings", icon: SettingsIcon, group: "System" },

@@ -26,7 +26,7 @@ import Settings from "./pages/Settings";
 import Knowledge from "./pages/Knowledge";
 import WelcomeCall from "./pages/WelcomeCall";
 import EmailAutomation from "./pages/EmailAutomation";
-import AutoUnderwriting from "./pages/AutoUnderwriting";
+// import AutoUnderwriting from "./pages/AutoUnderwriting";
 import MicroClaims from "./pages/MicroClaims";
 
 function ProtectedRoutes() {
@@ -63,7 +63,7 @@ function ProtectedRoutes() {
           <Route path="/knowledge" element={<Knowledge />} />
           <Route path="/welcome-call" element={<WelcomeCall />} />
           <Route path="/email-automation" element={<EmailAutomation />} />
-          <Route path="/auto-underwriting" element={<AutoUnderwriting />} />
+          {/* <Route path="/auto-underwriting" element={<AutoUnderwriting />} /> */}
           <Route path="/micro-claims" element={<MicroClaims />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
